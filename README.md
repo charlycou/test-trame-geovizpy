@@ -1,6 +1,7 @@
 
-=======
 # GeoVizPy: Geophysical data visualization with PyVista and Trame
+
+https://gitlab.in2p3.fr/spasquet/geovizpy
 
 ## Library requirements :
 To use GeoVizPy, the following python packages are required :
@@ -19,4 +20,3 @@ To use GeoVizPy, the following python packages are required :
 - fiona
 - rioxarray
 - scikit-image
->>>>>>> a1e02e8 (first commit)
