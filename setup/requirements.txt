@@ -1,0 +1,15 @@
+trame
+trame-vuetify
+trame-vtk
+trame-components
+vtk
+wslink
+pyvista
+numpy
+scipy
+rasterio
+owslib
+gemgis
+fiona
+rioxarray
+scikit-image
