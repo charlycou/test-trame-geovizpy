@@ -7,5 +7,9 @@ COPY --chown=trame-user:trame-user ./vtk /vtk
 COPY --chown=trame-user:trame-user ./tif /tif
 
 ENV TRAME_CLIENT_TYPE=vue2
+ENV DISPLAY=:99.0
+ENV PYVISTA_OFF_SCREEN=true
+
+RUN Xvfb :99 -nolisten tcp -fbdir /var/run > /dev/null 2>&1 &
 
 RUN /opt/trame/entrypoint.sh build && sed -i "s/wms = owslib.wms.WebMapService(url)/wms = owslib.wms.WebMapService(url,version='1.3.0')/g" /deploy/server/venv/lib/python3.9/site-packages/gemgis/web.py

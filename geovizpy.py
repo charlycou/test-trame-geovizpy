@@ -47,6 +47,7 @@ renderWindowInteractor.GetInteractorStyle().SetCurrentStyleToTrackballCamera()
 # Trame initialization
 # -----------------------------------------------------------------------------
 pv.OFF_SCREEN = True
+pv.start_xvfb()
 
 server = get_server()
 server.client_type = "vue2"
@@ -484,4 +485,4 @@ with SinglePageWithDrawerLayout(server) as layout:
                 
                 ctrl.view_update = view.update
                 
-server.start()
+server.start(host="127.0.0.1")
