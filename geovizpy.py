@@ -484,5 +484,4 @@ with SinglePageWithDrawerLayout(server) as layout:
                 
                 ctrl.view_update = view.update
                 
- 
 server.start()

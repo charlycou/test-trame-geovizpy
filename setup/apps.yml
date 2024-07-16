@@ -2,3 +2,4 @@ trame:
   cmd:
     - python
     - /deploy/geovizpy.py
+    - --server
